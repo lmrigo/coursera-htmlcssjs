@@ -5,20 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- 
+	Desktop mockup illustration should correspond to Bootstrap 'md'­based classes
+	Tablet mockup illustration should correspond to Bootstrap 'sm'­based classes
+	Mobile mockup illustration should correspond to Bootstrap 'xs'­based classes
+	-->
 
     <title>Boostrap Starter Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
 
-  <h1>Hello Coursera!</h1>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="nav-menu-item">
+              <a href="#chicken-description">Chicken</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#beef-description">Beef</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#sushi-description">Sushi</a>
+            </li>
+          </ul>
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+  
+  <div id="main-content" class="container">
+    <h2 id="main-title" class="text-center">Our Menu</h2>
+    <!--div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div-->
+
+    <div id="menu-descriptions" class="row">
+      <div id="chicken-description" class="col-xs-12 col-md-12 col-lg-12 menu-description">
+        <div class="menu-item-title text-center">chicken</div>
+        <div class="menu-item-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Et non ex maxima parte de tota iudicabis? Duo enim genera quae erant, fecit tria. Tibi hoc incredibile, quod beatissimum. Itaque hic ipse iam pridem est reiectus; Quasi ego id curem, quid ille aiat aut neget.
+Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qua tu etiam inprudens utebare non numquam. Est enim effectrix multarum et magnarum voluptatum. An hoc usque quaque, aliter in vita? Etenim si delectamur, cum scribimus, quis est tam invidus, qui ab eo nos abducat? Quantum Aristoxeni ingenium consumptum videmus in musicis? Est enim effectrix multarum et magnarum voluptatum. Atqui reperies, inquit, in hoc quidem pertinacem; Quo plebiscito decreta a senatu est consuli quaestio Cn. Eam si varietatem diceres, intellegerem, ut etiam non dicente te intellego;
+Nam de isto magna dissensio est. Dolere malum est: in crucem qui agitur, beatus esse non potest. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Bona autem corporis huic sunt, quod posterius posui, similiora. Sed haec nihil sane ad rem; Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Res enim se praeclare habebat, et quidem in utraque parte. Dicet pro me ipsa virtus nec dubitabit isti vestro beato M. Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+		</div>
+      </div>
+      <div id="beef-description" class="col-xs-12 menu-description">
+        <div class="menu-item-title text-center">beef</div>
+        <div class="menu-item-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Et non ex maxima parte de tota iudicabis? Duo enim genera quae erant, fecit tria. Tibi hoc incredibile, quod beatissimum. Itaque hic ipse iam pridem est reiectus; Quasi ego id curem, quid ille aiat aut neget.
+Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qua tu etiam inprudens utebare non numquam. Est enim effectrix multarum et magnarum voluptatum. An hoc usque quaque, aliter in vita? Etenim si delectamur, cum scribimus, quis est tam invidus, qui ab eo nos abducat? Quantum Aristoxeni ingenium consumptum videmus in musicis? Est enim effectrix multarum et magnarum voluptatum. Atqui reperies, inquit, in hoc quidem pertinacem; Quo plebiscito decreta a senatu est consuli quaestio Cn. Eam si varietatem diceres, intellegerem, ut etiam non dicente te intellego;
+Nam de isto magna dissensio est. Dolere malum est: in crucem qui agitur, beatus esse non potest. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Bona autem corporis huic sunt, quod posterius posui, similiora. Sed haec nihil sane ad rem; Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Res enim se praeclare habebat, et quidem in utraque parte. Dicet pro me ipsa virtus nec dubitabit isti vestro beato M. Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+		</div>
+      </div>
+      <div id="sushi-description" class="col-xs-12 menu-description">
+        <div class="menu-item-title text-center">sushi</div>
+        <div class="menu-item-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Et non ex maxima parte de tota iudicabis? Duo enim genera quae erant, fecit tria. Tibi hoc incredibile, quod beatissimum. Itaque hic ipse iam pridem est reiectus; Quasi ego id curem, quid ille aiat aut neget.
+Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Qua tu etiam inprudens utebare non numquam. Est enim effectrix multarum et magnarum voluptatum. An hoc usque quaque, aliter in vita? Etenim si delectamur, cum scribimus, quis est tam invidus, qui ab eo nos abducat? Quantum Aristoxeni ingenium consumptum videmus in musicis? Est enim effectrix multarum et magnarum voluptatum. Atqui reperies, inquit, in hoc quidem pertinacem; Quo plebiscito decreta a senatu est consuli quaestio Cn. Eam si varietatem diceres, intellegerem, ut etiam non dicente te intellego;
+Nam de isto magna dissensio est. Dolere malum est: in crucem qui agitur, beatus esse non potest. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Bona autem corporis huic sunt, quod posterius posui, similiora. Sed haec nihil sane ad rem; Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Res enim se praeclare habebat, et quidem in utraque parte. Dicet pro me ipsa virtus nec dubitabit isti vestro beato M. Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+		</div>
+      </div>
+    </div><!-- End of #menu-descriptions -->
+  </div><!-- End of #main-content -->
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
