@@ -1,0 +1,70 @@
+body {
+  font-family: cursive, Helvetica, sans-serif;
+}
+
+/* NAV */
+
+#header-nav {
+	min-height: 60px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: cursive, Helvetica;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+#nav-list {
+	border: solid 1px black;
+	background-color: white;
+}
+
+.nav-menu-item {
+	text-align: center;
+}
+
+.nav-menu-item:nth-child(even) {
+	border: solid black;
+	border-width: 1px 0px 1px 0px;
+}
+
+/* MAIN */
+
+#main-content {
+	width:100%;
+}
+
+#main-title {
+}
+
+#menu-descriptions {
+	margin: 20px;
+}
+
+.menu-description {
+	background-color: whitesmoke;
+	margin: 0 0 15px 0;
+}
+
+.menu-item-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 0 0 5px 0;
+}
+
+.menu-item-description {
+	text-transform: lowercase;
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* MAIN */
+
+#menu-descriptions {
+	margin: 40px;
+  }
+}
