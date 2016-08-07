@@ -5,7 +5,15 @@ body {
 /* NAV */
 
 #header-nav {
-	min-height: 60px;
+    min-height: 60px;
+}
+
+#header-nav .container {
+    padding: 0;
+}
+
+.navbar-header {
+    padding: 0px 15px 0px 15px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
@@ -14,48 +22,66 @@ body {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0px;
+  padding-bottom: 15px;
 }
+
+.navbar-header .navbar-toggle {
+    height: 40px;
+    padding: 9px 5px 9px 5px;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+    height: 4px;
+    width: 30px;
+}
+
+#collapsable-nav {
+    padding: 0;
+  /*width: 100%;*/
+}
+
 #nav-list {
-	border: solid 1px black;
-	background-color: white;
+  border: solid 1px black;
+  background-color: white;
+  margin: 0;
 }
 
 .nav-menu-item {
-	text-align: center;
+    text-align: center;
 }
 
 .nav-menu-item:nth-child(even) {
-	border: solid black;
-	border-width: 1px 0px 1px 0px;
+    border: solid black;
+    border-width: 1px 0px 1px 0px;
 }
 
 /* MAIN */
 
 #main-content {
-	width:100%;
+    width:100%;
 }
 
 #main-title {
 }
 
 #menu-descriptions {
-	margin: 20px;
+    margin: 20px;
 }
 
 .menu-description {
-	background-color: whitesmoke;
-	margin: 0 0 15px 0;
+    background-color: whitesmoke;
+    margin: 0 0 15px 0;
 }
 
 .menu-item-title {
-	font-size: 1.2em;
-	font-weight: bold;
-	text-transform: capitalize;
-	margin: 0 0 5px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
 }
 
 .menu-item-description {
-	text-transform: lowercase;
+    text-transform: lowercase;
 }
 
 
@@ -65,6 +91,6 @@ body {
 /* MAIN */
 
 #menu-descriptions {
-	margin: 40px;
+    margin: 40px;
   }
 }
