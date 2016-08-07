@@ -5,12 +5,12 @@ body {
 /* NAV */
 
 #header-nav {
-    min-height: 60px;
+    min-height: 70px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: cursive, Helvetica;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0px;
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-header .navbar-toggle {
-    height: 40px;
+    height: 44px;
     padding: 9px 5px 9px 5px;
 }
 
@@ -37,6 +37,7 @@ body {
 }
 
 .nav-menu-item {
+  font-size: 1.2em;
 }
 
 .nav-menu-item:nth-child(even) {
@@ -51,19 +52,24 @@ body {
 }
 
 #main-title {
+  font-size: 2.5em;
 }
 
 #menu-descriptions {
-    margin: 20px;
+    padding: 10px;
 }
 
 .menu-description {
-    background-color: whitesmoke;
-    margin: 0 0 15px 0;
+  margin-bottom: 15px;
+}
+
+.menu-description div {
+  background-color: whitesmoke;
+  padding: 15px;
 }
 
 .menu-item-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     text-transform: capitalize;
     margin: 0 0 5px 0;
